@@ -34,7 +34,7 @@ def mitm(d,c):
   for i in range(_sage_const_0 , A):
     d0.append( power_mod(c, A*i, N)  )
     
-  d0.sort()
+  #d0.sort()
   print d0
   
   for j in range(_sage_const_0 , A):
