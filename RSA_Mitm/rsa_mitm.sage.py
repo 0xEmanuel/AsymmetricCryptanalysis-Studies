@@ -34,12 +34,13 @@ def mitm(d,c):
   for i in range(_sage_const_0 , A):
     d0.append( power_mod(c, A*i, N)  )
     
+  d0.sort()
   print d0
   
   for j in range(_sage_const_0 , A):
     #tmp = power_mod(c, -1, N)
     #tmp = power_mod(tmp, j, N)
-    tmp = m * power_mod(c, -j, N)
+    tmp = mod(m * power_mod(c, -j, N),N)
     
     print tmp, tmp in d0
     
