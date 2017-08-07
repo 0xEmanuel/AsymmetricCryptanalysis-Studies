@@ -55,7 +55,10 @@ def pollardrho():
     s2,x2,y2 = func(s2,x2,y2)  
     K2 = s2
     #print "K1: ", K1, " K2: ", K2
-    if (K1 == K2) and (K1 != _sage_const_0 ):
+    
+    print "i: ",i ," |s1: ",s1, " x1: ",x1, " y1: ", y1, "| s2: ",s2, " x2: ",x2, " y2: ", y2 , "|" 
+    
+    if (K1 == K2):
       print "found K: ", K1
       print "x1: ",x1, " y1: ", y1, " x2: ",x2, " y2: ", y2 
       break
@@ -85,5 +88,4 @@ def pollardrho():
 a = pollardrho()        
 restored_beta = power_mod(alpha, a, p)
 print "restored_beta: ", restored_beta
- 
 
